@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Codaris - Agence de développement web"/>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Codaris - Agence de développement web premium" />
+    <meta property="og:description" content="Des sites qui convertissent, à votre image. Studio de développement web pour les marques qui veulent plus que 'juste un site'." />
+    <meta property="og:url" content="https://codaris.fr" />
+    <meta property="og:image" content="https://codaris.fr/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Codaris - Agence de développement web premium" />
+    <meta name="twitter:description" content="Des sites qui convertissent, à votre image." />
+    
+    <title>Codaris - Agence de développement web premium</title>
+
+    <!-- FONTS MONUMENTALES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;600&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- SECTION HERO -->
+    <section class="hero" id="home">
+        <nav class="navbar" role="navigation" aria-label="Navigation principale">
+            <div class="logo" aria-label="Codaris - Retour à l'accueil">CODARIS</div>
+            <button 
+                class="menu-icon" 
+                id="openMenu" 
+                aria-label="Ouvrir le menu de navigation"
+                aria-expanded="false"
+                aria-controls="sideMenu"
+            >
+                ☰
+            </button>
+        </nav>
+
+        <div class="hero-content">
+            <!-- On met le texte complet dans data-text pour l'animation typewriter -->
+            <h1 class="hero-tagline" id="heroTitle"
+               data-text="Des sites a votre image, qui convertissent.">
+                Des sites a votre image, qui convertissent.
+            </h1>
+            <p class="hero-sub" id="heroSub">
+                Studio de <span class="text-highlight">développement web</span> pour les marques qui veulent plus
+                que "<span class="text-highlight">juste un site</span>".
+            </p>
+            <div class="hero-ctas" id="heroCtas">
+                <a href="#contact" class="hero-btn">Demander un devis</a>
+                <a href="#projects" class="hero-btn ghost">Voir nos projets</a>
+            </div>
+        </div>
+
+        <!-- Flèche animée de conversion -->
+        <div class="hero-arrow" id="heroArrow" aria-hidden="true">
+            <svg viewBox="0 -20 600 300" xmlns="http://www.w3.org/2000/svg" class="arrow-svg">
+                <!-- Ligne diagonale courbe avec 2-3 variations clairement visibles (croissance/décroissance) -->
+                <path 
+                    id="arrow-line" 
+                    d="M 30 270 C 80 240, 120 220, 150 240 C 180 260, 200 240, 230 220 C 260 200, 280 180, 310 200 C 340 220, 360 200, 390 180 C 420 160, 440 140, 470 120 C 500 100, 520 80, 550 60 C 580 40, 600 20, 630 0" 
+                    stroke="rgba(255, 255, 255, 0.9)" 
+                    stroke-width="5" 
+                    fill="none" 
+                    stroke-linecap="round"
+                />
+                <!-- Pointe de la flèche (sera orientée dynamiquement) -->
+                <g id="arrow-head-group">
+                    <path 
+                        id="arrow-head" 
+                        d="M 0 0 L -15 10 L -5 5 L -10 15 Z" 
+                        stroke="rgba(255, 255, 255, 0.9)" 
+                        stroke-width="5" 
+                        fill="rgba(255, 255, 255, 0.9)"
+                        stroke-linejoin="round"
+                    />
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <!-- MARQUEE CONTINU #1 (sous le hero) -->
+    <div class="marquee marquee--reverse" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Développement web sur-mesure</span>
+            <span>UX / UI design premium</span>
+            <span>Sites qui convertissent</span>
+            <span>Funnels optimisés</span>
+            <span>Accompagnement stratégique</span>
+            <span>Développement web sur-mesure</span>
+            <span>UX / UI design premium</span>
+            <span>Sites qui convertissent</span>
+            <span>Funnels optimisés</span>
+            <span>Accompagnement stratégique</span>
+            <span>Développement web sur-mesure</span>
+            <span>UX / UI design premium</span>
+            <span>Sites qui convertissent</span>
+            <span>Funnels optimisés</span>
+            <span>Accompagnement stratégique</span>
+            <span>Développement web sur-mesure</span>
+            <span>UX / UI design premium</span>
+            <span>Sites qui convertissent</span>
+            <span>Funnels optimisés</span>
+            <span>Accompagnement stratégique</span>
+            <span>Développement web sur-mesure</span>
+            <span>UX / UI design premium</span>
+            <span>Sites qui convertissent</span>
+            <span>Funnels optimisés</span>
+            <span>Accompagnement stratégique</span>
+            <span>Développement web sur-mesure</span>
+            <span>UX / UI design premium</span>
+            <span>Sites qui convertissent</span>
+            <span>Funnels optimisés</span>
+            <span>Accompagnement stratégique</span>
+            <span>Développement web sur-mesure</span>
+            <span>UX / UI design premium</span>
+            <span>Sites qui convertissent</span>
+            <span>Funnels optimisés</span>
+            <span>Accompagnement stratégique</span>
+            <span>Développement web sur-mesure</span>
+            <span>UX / UI design premium</span>
+            <span>Sites qui convertissent</span>
+            <span>Funnels optimisés</span>
+            <span>Accompagnement stratégique</span>
+        </div>
+    </div>
+
+    <main>
+    <!-- SECTION PROJETS -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-inner">
+            <h2 class="section-title" id="projects-title">Nos projets</h2>
+
+        </div>
+
+        <div class="projects-scroller">
+            <div class="projects-track">
+                <!-- LOT 1 -->
+                <a href="#project-1" class="project-card" aria-label="Voir le projet Portfolio créatif">
+                    <div class="project-body">
+                        <img src="assets/projet_1.png" alt="Portfolio créatif – Projet 1">
+                    </div>
+                    <div class="project-footer">Projet 1 • Portfolio créatif</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_2.png" alt="Site pour DJs et producteurs – Projet 2">
+                    </div>
+                    <div class="project-footer">Projet 2 • Site pour DJs &amp; producteurs</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_3.png" alt="Site d’association de secourisme – Projet 3">
+                    </div>
+                    <div class="project-footer">Projet 3 • Association de secourisme</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_4.png" alt="Site e-commerce magasin de vêtements – Projet 4">
+                    </div>
+                    <div class="project-footer">Projet 4 • Magasin de vêtements</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_5.png" alt="Site d’agence de voyage – Projet 5">
+                    </div>
+                    <div class="project-footer">Projet 5 • Agence de voyage</div>
+                </a>
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_1.png" alt="Portfolio créatif – Projet 1">
+                    </div>
+                    <div class="project-footer">Projet 1 • Portfolio créatif</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_2.png" alt="Site pour DJs et producteurs – Projet 2">
+                    </div>
+                    <div class="project-footer">Projet 2 • Site pour DJs &amp; producteurs</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_3.png" alt="Site d’association de secourisme – Projet 3">
+                    </div>
+                    <div class="project-footer">Projet 3 • Association de secourisme</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_4.png" alt="Site e-commerce magasin de vêtements – Projet 4">
+                    </div>
+                    <div class="project-footer">Projet 4 • Magasin de vêtements</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_5.png" alt="Site d’agence de voyage – Projet 5">
+                    </div>
+                    <div class="project-footer">Projet 5 • Agence de voyage</div>
+                </a>
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_1.png" alt="Portfolio créatif – Projet 1">
+                    </div>
+                    <div class="project-footer">Projet 1 • Portfolio créatif</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_2.png" alt="Site pour DJs et producteurs – Projet 2">
+                    </div>
+                    <div class="project-footer">Projet 2 • Site pour DJs &amp; producteurs</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_3.png" alt="Site d’association de secourisme – Projet 3">
+                    </div>
+                    <div class="project-footer">Projet 3 • Association de secourisme</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_4.png" alt="Site e-commerce magasin de vêtements – Projet 4">
+                    </div>
+                    <div class="project-footer">Projet 4 • Magasin de vêtements</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_5.png" alt="Site d’agence de voyage – Projet 5">
+                    </div>
+                    <div class="project-footer">Projet 5 • Agence de voyage</div>
+                </a>
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_1.png" alt="Portfolio créatif – Projet 1">
+                    </div>
+                    <div class="project-footer">Projet 1 • Portfolio créatif</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_2.png" alt="Site pour DJs et producteurs – Projet 2">
+                    </div>
+                    <div class="project-footer">Projet 2 • Site pour DJs &amp; producteurs</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_3.png" alt="Site d’association de secourisme – Projet 3">
+                    </div>
+                    <div class="project-footer">Projet 3 • Association de secourisme</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_4.png" alt="Site e-commerce magasin de vêtements – Projet 4">
+                    </div>
+                    <div class="project-footer">Projet 4 • Magasin de vêtements</div>
+                </a>
+
+                <a href="#" class="project-card" aria-label="Voir le projet détaillé">
+                    <div class="project-body">
+                        <img src="assets/projet_5.png" alt="Site d’agence de voyage – Projet 5">
+                    </div>
+                    <div class="project-footer">Projet 5 • Agence de voyage</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE CONTINU #2 (inverse, entre PROJETS et CONTACT) -->
+    <div class="marquee marquee--reverse" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Codaris • Agence de développement web</span>
+            <span>Design sur-mesure</span>
+            <span>Performances &amp; SEO</span>
+            <span>Accompagnement de A à Z</span>
+            <span>Sites pensés pour convertir</span>
+            <span>Codaris • Agence de développement web</span>
+            <span>Design sur-mesure</span>
+            <span>Performances &amp; SEO</span>
+            <span>Accompagnement de A à Z</span>
+            <span>Sites pensés pour convertir</span>
+            <span>Codaris • Agence de développement web</span>
+            <span>Design sur-mesure</span>
+            <span>Performances &amp; SEO</span>
+            <span>Accompagnement de A à Z</span>
+            <span>Sites pensés pour convertir</span>
+            <span>Codaris • Agence de développement web</span>
+            <span>Design sur-mesure</span>
+            <span>Performances &amp; SEO</span>
+            <span>Accompagnement de A à Z</span>
+            <span>Sites pensés pour convertir</span>
+            <span>Codaris • Agence de développement web</span>
+            <span>Design sur-mesure</span>
+            <span>Performances &amp; SEO</span>
+            <span>Accompagnement de A à Z</span>
+            <span>Sites pensés pour convertir</span>
+            <span>Codaris • Agence de développement web</span>
+            <span>Design sur-mesure</span>
+            <span>Performances &amp; SEO</span>
+            <span>Accompagnement de A à Z</span>
+            <span>Sites pensés pour convertir</span>
+            <span>Codaris • Agence de développement web</span>
+            <span>Design sur-mesure</span>
+            <span>Performances &amp; SEO</span>
+            <span>Accompagnement de A à Z</span>
+            <span>Sites pensés pour convertir</span>
+        </div>
+    </div>
+
+    <!-- SECTION NOTRE APPROCHE -->
+    <section class="section section-alt" id="approach" aria-labelledby="approach-title">
+        <div class="section-inner">
+            <h2 class="section-title" id="approach-title">Notre approche</h2>
+        </div>
+        
+        <div class="approach-timeline">
+            <div class="timeline-line">
+                <div class="timeline-progress" id="timelineProgress"></div>
+            </div>
+            
+            <div class="approach-content">
+                <div class="approach-step" data-step="1">
+                    <div class="approach-step-number">01</div>
+                    <div class="approach-step-content">
+                        <h3 class="approach-step-title">Découverte & Analyse</h3>
+                        <p class="approach-step-text">Nous commençons par une phase d'écoute approfondie pour comprendre vos besoins, vos objectifs business et votre vision. Nous analysons votre marché, vos concurrents et votre positionnement pour définir une stratégie digitale sur-mesure.</p>
+                    </div>
+                </div>
+
+                <div class="approach-step" data-step="2">
+                    <div class="approach-step-number">02</div>
+                    <div class="approach-step-content">
+                        <h3 class="approach-step-title">Conception & Design</h3>
+                        <p class="approach-step-text">Notre équipe de designers crée une identité visuelle unique qui reflète votre marque. Nous développons des maquettes UX/UI optimisées pour guider vos visiteurs vers l'action, avec un design moderne et professionnel qui convertit.</p>
+                    </div>
+                </div>
+
+                <div class="approach-step" data-step="3">
+                    <div class="approach-step-number">03</div>
+                    <div class="approach-step-content">
+                        <h3 class="approach-step-title">Développement & Intégration</h3>
+                        <p class="approach-step-text">Nous transformons vos maquettes en un site web performant, responsive et optimisé SEO. Nous intégrons les fonctionnalités nécessaires, connectons les APIs requises et assurons une compatibilité parfaite sur tous les appareils.</p>
+                    </div>
+                </div>
+
+                <div class="approach-step" data-step="4">
+                    <div class="approach-step-number">04</div>
+                    <div class="approach-step-content">
+                        <h3 class="approach-step-title">Tests & Optimisation</h3>
+                        <p class="approach-step-text">Avant le lancement, nous effectuons des tests rigoureux pour garantir la qualité, les performances et la sécurité. Nous optimisons chaque détail pour offrir une expérience utilisateur exceptionnelle et maximiser vos conversions.</p>
+                    </div>
+                </div>
+
+                <div class="approach-step" data-step="5">
+                    <div class="approach-step-number">05</div>
+                    <div class="approach-step-content">
+                        <h3 class="approach-step-title">Lancement & Accompagnement</h3>
+                        <p class="approach-step-text">Nous gérons le déploiement de votre site et vous formons à l'utilisation de votre nouvelle plateforme. Nous restons à vos côtés pour assurer la maintenance, les mises à jour et l'évolution continue de votre présence digitale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE CONTINU #3 (entre NOTRE APPROCHE et EXPERTISES) -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Stratégie digitale personnalisée</span>
+            <span>Solutions sur-mesure</span>
+            <span>Innovation &amp; Performance</span>
+            <span>Résultats mesurables</span>
+            <span>Partenaire de confiance</span>
+            <span>Stratégie digitale personnalisée</span>
+            <span>Solutions sur-mesure</span>
+            <span>Innovation &amp; Performance</span>
+            <span>Résultats mesurables</span>
+            <span>Partenaire de confiance</span>
+            <span>Stratégie digitale personnalisée</span>
+            <span>Solutions sur-mesure</span>
+            <span>Innovation &amp; Performance</span>
+            <span>Résultats mesurables</span>
+            <span>Partenaire de confiance</span>
+            <span>Stratégie digitale personnalisée</span>
+            <span>Solutions sur-mesure</span>
+            <span>Innovation &amp; Performance</span>
+            <span>Résultats mesurables</span>
+            <span>Partenaire de confiance</span>
+            <span>Stratégie digitale personnalisée</span>
+            <span>Solutions sur-mesure</span>
+            <span>Innovation &amp; Performance</span>
+            <span>Résultats mesurables</span>
+            <span>Partenaire de confiance</span>
+            <span>Stratégie digitale personnalisée</span>
+            <span>Solutions sur-mesure</span>
+            <span>Innovation &amp; Performance</span>
+            <span>Résultats mesurables</span>
+            <span>Partenaire de confiance</span>
+        </div>
+    </div>
+
+    <!-- SECTION EXPERTISES -->
+    <section class="section" id="expertises" aria-labelledby="expertises-title">
+        <div class="section-inner">
+            <h2 class="section-title" id="expertises-title">Expertises</h2>
+        </div>
+        
+        <div class="expertises-carousels">
+            <!-- Premier carousel : gauche à droite -->
+            <div class="expertises-carousel expertises-carousel--forward">
+                <div class="expertises-track">
+                    <!-- LOT 1 -->
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Conseil en digital</h3>
+                            <p class="expertise-description">Stratégie digitale sur-mesure pour maximiser votre présence en ligne et atteindre vos objectifs business.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Design</h3>
+                            <p class="expertise-description">UX/UI design premium qui allie esthétique moderne et expérience utilisateur optimale pour convertir vos visiteurs.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Développement Web</h3>
+                            <p class="expertise-description">Sites web performants, responsives et optimisés SEO, développés avec les dernières technologies.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Implémentation APIs</h3>
+                            <p class="expertise-description">Intégration d'APIs tierces pour connecter votre site aux services essentiels et automatiser vos processus.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Travail d'UI/UX</h3>
+                            <p class="expertise-description">Conception d'interfaces intuitives et d'expériences utilisateur optimisées pour maximiser l'engagement et les conversions.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Hébergement</h3>
+                            <p class="expertise-description">Solutions d'hébergement performantes et sécurisées pour garantir la disponibilité et la rapidité de votre site web.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Audit complet de site web</h3>
+                            <p class="expertise-description">Analyse approfondie de votre site existant pour identifier les axes d'amélioration et optimiser les performances.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Analyse de besoins & spécifications</h3>
+                            <p class="expertise-description">Étude détaillée de vos besoins métier pour définir les spécifications techniques et fonctionnelles de votre projet.</p>
+                        </div>
+                    </div>
+                    <!-- LOT 2 - Duplication pour boucle infinie -->
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Conseil en digital</h3>
+                            <p class="expertise-description">Stratégie digitale sur-mesure pour maximiser votre présence en ligne et atteindre vos objectifs business.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Design</h3>
+                            <p class="expertise-description">UX/UI design premium qui allie esthétique moderne et expérience utilisateur optimale pour convertir vos visiteurs.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Développement Web</h3>
+                            <p class="expertise-description">Sites web performants, responsives et optimisés SEO, développés avec les dernières technologies.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Implémentation APIs</h3>
+                            <p class="expertise-description">Intégration d'APIs tierces pour connecter votre site aux services essentiels et automatiser vos processus.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Travail d'UI/UX</h3>
+                            <p class="expertise-description">Conception d'interfaces intuitives et d'expériences utilisateur optimisées pour maximiser l'engagement et les conversions.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Hébergement</h3>
+                            <p class="expertise-description">Solutions d'hébergement performantes et sécurisées pour garantir la disponibilité et la rapidité de votre site web.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Audit complet de site web</h3>
+                            <p class="expertise-description">Analyse approfondie de votre site existant pour identifier les axes d'amélioration et optimiser les performances.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Analyse de besoins & spécifications</h3>
+                            <p class="expertise-description">Étude détaillée de vos besoins métier pour définir les spécifications techniques et fonctionnelles de votre projet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deuxième carousel : droite à gauche (même contenu, sens inverse) -->
+            <div class="expertises-carousel expertises-carousel--reverse">
+                <div class="expertises-track">
+                    <!-- LOT 1 -->
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Conseil en digital</h3>
+                            <p class="expertise-description">Stratégie digitale sur-mesure pour maximiser votre présence en ligne et atteindre vos objectifs business.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Design</h3>
+                            <p class="expertise-description">UX/UI design premium qui allie esthétique moderne et expérience utilisateur optimale pour convertir vos visiteurs.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Développement Web</h3>
+                            <p class="expertise-description">Sites web performants, responsives et optimisés SEO, développés avec les dernières technologies.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Implémentation APIs</h3>
+                            <p class="expertise-description">Intégration d'APIs tierces pour connecter votre site aux services essentiels et automatiser vos processus.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Travail d'UI/UX</h3>
+                            <p class="expertise-description">Conception d'interfaces intuitives et d'expériences utilisateur optimisées pour maximiser l'engagement et les conversions.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Hébergement</h3>
+                            <p class="expertise-description">Solutions d'hébergement performantes et sécurisées pour garantir la disponibilité et la rapidité de votre site web.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Audit complet de site web</h3>
+                            <p class="expertise-description">Analyse approfondie de votre site existant pour identifier les axes d'amélioration et optimiser les performances.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Analyse de besoins & spécifications</h3>
+                            <p class="expertise-description">Étude détaillée de vos besoins métier pour définir les spécifications techniques et fonctionnelles de votre projet.</p>
+                        </div>
+                    </div>
+                    <!-- LOT 2 - Duplication pour boucle infinie -->
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Conseil en digital</h3>
+                            <p class="expertise-description">Stratégie digitale sur-mesure pour maximiser votre présence en ligne et atteindre vos objectifs business.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Design</h3>
+                            <p class="expertise-description">UX/UI design premium qui allie esthétique moderne et expérience utilisateur optimale pour convertir vos visiteurs.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Développement Web</h3>
+                            <p class="expertise-description">Sites web performants, responsives et optimisés SEO, développés avec les dernières technologies.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Implémentation APIs</h3>
+                            <p class="expertise-description">Intégration d'APIs tierces pour connecter votre site aux services essentiels et automatiser vos processus.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Travail d'UI/UX</h3>
+                            <p class="expertise-description">Conception d'interfaces intuitives et d'expériences utilisateur optimisées pour maximiser l'engagement et les conversions.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Hébergement</h3>
+                            <p class="expertise-description">Solutions d'hébergement performantes et sécurisées pour garantir la disponibilité et la rapidité de votre site web.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Audit complet de site web</h3>
+                            <p class="expertise-description">Analyse approfondie de votre site existant pour identifier les axes d'amélioration et optimiser les performances.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-content">
+                            <h3 class="expertise-title">Analyse de besoins & spécifications</h3>
+                            <p class="expertise-description">Étude détaillée de vos besoins métier pour définir les spécifications techniques et fonctionnelles de votre projet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MARQUEE CONTINU #4 (entre EXPERTISES et CONTACT) -->
+    <div class="marquee marquee--reverse" aria-hidden="true">
+        <div class="marquee-track">
+            <span>Expertise technique</span>
+            <span>Solutions innovantes</span>
+            <span>Accompagnement personnalisé</span>
+            <span>Réactivité &amp; Écoute</span>
+            <span>Qualité professionnelle</span>
+            <span>Expertise technique</span>
+            <span>Solutions innovantes</span>
+            <span>Accompagnement personnalisé</span>
+            <span>Réactivité &amp; Écoute</span>
+            <span>Qualité professionnelle</span>
+            <span>Expertise technique</span>
+            <span>Solutions innovantes</span>
+            <span>Accompagnement personnalisé</span>
+            <span>Réactivité &amp; Écoute</span>
+            <span>Qualité professionnelle</span>
+            <span>Expertise technique</span>
+            <span>Solutions innovantes</span>
+            <span>Accompagnement personnalisé</span>
+            <span>Réactivité &amp; Écoute</span>
+            <span>Qualité professionnelle</span>
+            <span>Expertise technique</span>
+            <span>Solutions innovantes</span>
+            <span>Accompagnement personnalisé</span>
+            <span>Réactivité &amp; Écoute</span>
+            <span>Qualité professionnelle</span>
+        </div>
+    </div>
+
+    <!-- SECTION CONTACT -->
+    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+        <div class="section-inner">
+            <h2 class="section-title" id="contact-title">Contact</h2>
+
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="field">
+                    <label for="contact-name">Votre nom</label>
+                    <input 
+                        type="text" 
+                        id="contact-name" 
+                        name="name" 
+                        placeholder="Jane Doe" 
+                        required
+                        aria-required="true"
+                        aria-invalid="false"
+                    >
+                    <span class="field-error" id="name-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                    <label for="contact-email">Votre email</label>
+                    <input 
+                        type="email" 
+                        id="contact-email" 
+                        name="email" 
+                        placeholder="vous@exemple.com" 
+                        required
+                        aria-required="true"
+                        aria-invalid="false"
+                    >
+                    <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="field">
+                    <label for="contact-project">Votre projet</label>
+                    <textarea 
+                        id="contact-project" 
+                        name="project" 
+                        placeholder="Parlez-nous de votre site idéal..." 
+                        required
+                        aria-required="true"
+                        aria-invalid="false"
+                    ></textarea>
+                    <span class="field-error" id="project-error" role="alert" aria-live="polite"></span>
+                </div>
+                <div class="form-message" id="formMessage" role="alert" aria-live="polite"></div>
+                <button type="submit" class="hero-btn">Envoyer</button>
+            </form>
+        </div>
+    </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-background"></div>
+        <div class="footer-inner">
+            <div class="footer-main">
+                <div class="footer-col footer-col--brand">
+                    <div class="footer-logo">CODARIS</div>
+                    <p class="footer-tagline">Des sites qui <span class="text-glow">convertissent</span>, à votre image.</p>
+                    <p class="footer-description">Agence de développement web spécialisée dans la création de sites performants et optimisés pour la conversion.</p>
+                </div>
+                
+                <div class="footer-col footer-col--links">
+                    <h3 class="footer-col-title">Navigation</h3>
+                    <nav class="footer-nav">
+                        <a href="#home" class="footer-link">Home</a>
+                        <a href="#projects" class="footer-link">Projets</a>
+                        <a href="#approach" class="footer-link">Notre approche</a>
+                        <a href="#expertises" class="footer-link">Expertises</a>
+                        <a href="#contact" class="footer-link">Contact</a>
+                    </nav>
+                </div>
+                
+                <div class="footer-col footer-col--services">
+                    <h3 class="footer-col-title">Services</h3>
+                    <nav class="footer-nav">
+                        <span class="footer-service">Développement Web</span>
+                        <span class="footer-service">Design UX/UI</span>
+                        <span class="footer-service">Conseil Digital</span>
+                        <span class="footer-service">Optimisation SEO</span>
+                        <span class="footer-service">Intégration APIs</span>
+                    </nav>
+                </div>
+                
+                <div class="footer-col footer-col--contact">
+                    <h3 class="footer-col-title">Contact</h3>
+                    <div class="footer-contact-info">
+                        <a href="mailto:contact@codarislabs.com" class="footer-contact-link">
+                            <span class="footer-contact-icon">✉</span>
+                            <span>contact@codarislabs.com</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-left">
+                    <span>© <span id="year"></span> Codaris. Tous droits réservés.</span>
+                </div>
+                <div class="footer-bottom-right">
+                    <a href="#" class="footer-legal-link">Mentions légales</a>
+                    <span class="footer-separator">•</span>
+                    <a href="#" class="footer-legal-link">Politique de confidentialité</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- OVERLAY BACKDROP -->
+    <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+
+    <!-- MENU LATERAL + CAROUSEL VERTICAL -->
+    <aside 
+        class="side-menu" 
+        id="sideMenu" 
+        role="dialog" 
+        aria-modal="true" 
+        aria-label="Menu de navigation"
+        aria-hidden="true"
+    >
+        <div class="side-menu-content">
+            <button 
+                class="close-btn" 
+                id="closeMenu" 
+                aria-label="Fermer le menu de navigation"
+            >
+                <span class="close-icon">✕</span>
+            </button>
+
+            <nav class="carousel" id="carousel" role="navigation" aria-label="Navigation du menu">
+                <a href="#home" class="carousel-item" data-target="home" aria-label="Aller à la section Accueil">
+                    <span class="menu-item-text">HOME</span>
+                    <span class="menu-item-number">01</span>
+                </a>
+                <a href="#projects" class="carousel-item" data-target="projects" aria-label="Aller à la section Projets">
+                    <span class="menu-item-text">NOS PROJETS</span>
+                    <span class="menu-item-number">02</span>
+                </a>
+                <a href="#approach" class="carousel-item" data-target="approach" aria-label="Aller à la section Notre approche">
+                    <span class="menu-item-text">NOTRE APPROCHE</span>
+                    <span class="menu-item-number">03</span>
+                </a>
+                <a href="#expertises" class="carousel-item" data-target="expertises" aria-label="Aller à la section Expertises">
+                    <span class="menu-item-text">EXPERTISES</span>
+                    <span class="menu-item-number">04</span>
+                </a>
+                <a href="#contact" class="carousel-item" data-target="contact" aria-label="Aller à la section Contact">
+                    <span class="menu-item-text">CONTACT</span>
+                    <span class="menu-item-number">05</span>
+                </a>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- SCRIPT PRINCIPAL -->
+    <script src="main.js"></script>
+
+</body>
+</html>
